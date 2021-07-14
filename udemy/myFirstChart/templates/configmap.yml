@@ -8,3 +8,5 @@ data:
   zone: {{ quote .Values.infra.zone }}
   Region: {{ quote .Values.infra.region }}
   ProjectCode: {{ upper .Values.projectCode }}
+  Pipeline: {{ .Values.projectCode| upper | quote }}
+  now: {{ now| date "2006-01-02"|quote }}
