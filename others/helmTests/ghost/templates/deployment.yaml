@@ -17,6 +17,6 @@ spec:
       containers:
       - name: {{ .Values.Blog.name }}
         image: {{ .Values.Blog.image }}
-        imagePullPolicy: {{ .Values.Blog.iamgePulPolicy }}
+        imagePullPolicy: {{ .Values.Blog.imagePullPolicy }}
         ports:
         - containerPort: {{ .Values.Blog.containerPort }}
