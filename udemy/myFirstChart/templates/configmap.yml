@@ -4,3 +4,7 @@ metadata:
   name: {{ .Release.Name }}-configmap
 data:
   myvalue: "Sample Config Map"
+  costCode: {{.Values.costCode }}
+  zone: {{ quote .Values.infra.zone }}
+  Region: {{ quote .Values.infra.region }}
+  ProjectCode: {{ upper .Values.projectCode }}

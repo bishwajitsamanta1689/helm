@@ -1,0 +1,5 @@
+costCode: CC90000
+projectCode: aazzxxyy
+infra:
+  zone: a,b,c
+  region: us-east
