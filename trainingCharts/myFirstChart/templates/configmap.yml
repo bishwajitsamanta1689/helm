@@ -11,6 +11,7 @@ data:
   Pipeline: {{ .Values.projectCode | upper | quote }}
   now: {{ now | date "2006-01-02" | quote }}
   contact: {{ .Values.contact | default "+91-7899171122" | quote }}
-  {{- if eq .Values.infra.region "us-east" }}
-  ha: true
+  {{- with .Values.favorite }}
+  drink: {{ .drink | default "tea" | quote }}
+  food: {{ .food | upper | quote }}
   {{- end }}
